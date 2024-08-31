@@ -9,7 +9,7 @@ body {
 
 /* ---------------------------- HEADER ---------------------------- */
 
-#header {
+header {
     height: 60px;
     padding: 5px 7px;
     display: flex;
@@ -18,7 +18,7 @@ body {
     /* border-bottom: 5px solid var(--azul); */
 }
 
-#header img {
+header img {
     max-height: 100%;
 }
 
