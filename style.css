@@ -1,6 +1,25 @@
 :root {
     --azul: #0056b3;
+    --red: #ff0000;
     /* --md-borda: 2px; */
+}
+
+/* Personalizando a barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+/* Cor de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background-color: #ddd;
+}
+
+/* Cor da parte "móvel" da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: var(--azul);
+    border-radius: 6px;
+    border: 2px solid #f0f0f0;
 }
 
 body {
@@ -80,17 +99,80 @@ header img {
     background-color: var(--azul);
 }
 
-#NavSections div {
+#NavSections .nav-item {
+    display: inline-block;
+    position: relative;
     padding: 5px;
     color: white;
     cursor: pointer;
+    padding: 5px;
+    height: 100%;
 }
 
-#NavSections div {
-    padding: 5px;
+#NavSections .nav-item:hover {
+    border-bottom: 2px solid var(--red);
+    padding-bottom: 3px;
 }
+
+#NavSections .item-window {
+    position: absolute;
+    margin: 0px;
+}
+
+/* Slides */
+#Slides {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 400%;
+}
+
+.slide {
+    width: 25%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Selos de Garantia e Confiança */
 
 #div_selos {
+    color: white;
+    margin: 50px 0px;
+    background-color: var(--azul);
+    border-top: 4px solid var(--azul);
+    border-bottom: 4px solid var(--azul);
     padding: 20px;
     gap: 20px;
     display: grid;
@@ -103,8 +185,154 @@ header img {
 }
 
 .selo img {
+    filter: invert(100%);
     width: 50px;
 }
+
+#reviews {
+    width: 100%;
+    overflow: auto;
+}
+
+#reviews-scroll {
+    width: max-content;
+    overflow: hidden;
+}
+
+
+.cardReview {
+    vertical-align: top;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+}
+
+.cardReview img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+/* Fornecedores Parceiros */
+
+.title-tag {
+    padding: 10px;
+    color: white;
+    background-color: var(--azul);
+    border-bottom: 4px solid var(--red);
+    text-align: center;
+}
+
+/* Estilização do container do slide */
+#slide-fornec {
+    width: calc(100%-20px);
+    /* overflow: auto; */
+    overflow: hidden;
+    padding: 10px;
+}
+
+/* Estilização da track do slide */
+#slideTrackFornec {
+    width: 500%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+/* As divs de fornecedores em grupo serão exibidas horizontalmente */
+.div_fornec_group {
+    /* border-right: 2px solid var(--azul); */
+    user-select: none;
+    cursor: grab;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#slideTrackFornec img {
+    width: 150px;
+    height: 150px;
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+
+/* Historia */
+
+#revistaAcit {
+    color: gray;
+    font-size: 15px;
+    max-width: 800px;
+    margin: auto;
+    text-align: right;
+}
+
+.historia {
+    padding: 20px 50px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.flexdiv {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+}
+
+.flexdiv div {
+    width: 40%;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--azul);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+footer div {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    border-bottom: 2px solid var(--red);
+    /* Muda a cor do link ao passar o mouse */
+}
+
+/* Botão de Whatsapp */
 
 #div_contato {
     position: fixed;
@@ -127,6 +355,7 @@ header img {
     border: none;
     border-radius: 90px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 #div_contato button img {

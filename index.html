@@ -23,17 +23,36 @@
         </button>
     </header>
     <nav id="NavSections">
-        <div>Motor e Embreagem</div>
-        <div>Carburação e Injeção</div>
-        <div>Transmissão / Câmbio / Diferencial</div>
-        <div>Direção</div>
-        <div>Suspenção</div>
-        <div>Freios</div>
-        <div>Acessórios Automotivos</div>
-        <div>Carroceria e Escapamentos</div>
-        <div>Elétrico</div>
+        <div class="nav-item">Motor e Embreagem</div>
+        <ul class="item-window"></ul>
+        <div class="nav-item">Carburação e Injeção</div>
+        <ul class="item-window"></ul>
+        <div class="nav-item">Transmissão / Câmbio / Diferencial</div>
+        <ul class="item-window"></ul>
+        <div class="nav-item">Direção</div>
+        <ul class="item-window"></ul>
+        <div class="nav-item">Suspenção</div>
+        <ul class="item-window"></ul>
+        <div class="nav-item">Freios</div>
+        <ul class="item-window"></ul>
+        <div class="nav-item">Acessórios Automotivos</div>
+        <ul class="item-window"></ul>
+        <div class="nav-item">Carroceria e Escapamentos</div>
+        <ul class="item-window"></ul>
+        <div class="nav-item">Elétrico</div>
+        <ul class="item-window"></ul>
     </nav>
-    <div id="banner"></div>
+    <div id="Slides">
+        <div class="slide-container" id="slide-container">
+            <div class="slide"><img src="images/Banners/01.png" alt="Imagem 1"></div>
+            <div class="slide"><img src="images/Banners/01.png" alt="Imagem 2"></div>
+            <div class="slide"><img src="images/Banners/01.png" alt="Imagem 3"></div>
+            <div class="slide"><img src="images/Banners/01.png" alt="Imagem 4"></div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        <script src="scripts/slides.js"></script>
+    </div>
     <div id="div_selos">
         <div class="selo">
             <img src="images/selos/Frete.png">
@@ -69,78 +88,113 @@
     </div>
     <!-- Seção Produtos -->
     <!-- Depoimentos / Reviews -->
-    <div>
-        <div class="cardReview">
-            <img src="" alt="">
-            <h3>Cleiton</h3>
-            <div class="stars"></div>
-            <p>Bom atendimento, peças em conta, grande variedade, vendedores muito bons rapidos e competentes.</p>
-        </div>
-        <div class="cardReview">
-            <img src="" alt="">
-            <h3>Elias</h3>
-            <div class="stars"></div>
-            <p>Serviço e atendimento bom</p>
-        </div>
-        <div class="cardReview">
-            <img src="" alt="">
-            <h3>Maikon</h3>
-            <div class="stars"></div>
-            <p>Serviço bem feito, bom atendimento, preço justo. Como a mecânica é grande, o tempo de atendimento é
-                rápido. A Belenzier tem a auto peças junto, então também facilita na agilidade e preço das peças e
-                serviços. A localização é ótima, bem no centro. Tem água e cafezinho na sala de espera, e sempre me
-                trazem para o trabalho quando o carro fica lá. Tudo perfeito.</p>
-        </div>
-        <div class="cardReview">
-            <img src="" alt="">
-            <h3>Cleverson</h3>
-            <div class="stars"></div>
-            <p>Atendimento sensacional... O vendedor foi super atencioso.... Muito profissional.... Resolvendo meus
-                problemas... Parabéns também a moça do caixa e do cadastro....</p>
-        </div>
-        <div class="cardReview">
-            <img src="" alt="">
-            <h3>Denis</h3>
-            <div class="stars"></div>
-            <p>Bom Preço e atendimento excelente, ando 80 km para compra peças na loja.</p>
-        </div>
-        <div class="cardReview">
-            <img src="" alt="">
-            <h3>Diego Calisto</h3>
-            <div class="stars"></div>
-            <p>Fiz o motor do meu carro e ficou supimpa recomendo</p>
-        </div>
-        <div class="cardReview">
-            <img src="" alt="">
-            <h3>Jair Cordeiro</h3>
-            <div class="stars"></div>
-            <p>Ótima, super atenciosos e sem roubalheira, passam o verdadeiro orçamento sem invenção de serviços.</p>
-        </div>
-        <div class="cardReview">
-            <img src="" alt="">
-            <h3>Jaime A. Belini</h3>
-            <div class="stars"></div>
-            <p>Ótimo atendimento em peças e serviços, com ótimo estoque de peças mecânica, acessórios e acabamentos...
-            </p>
-        </div>
-        <div class="cardReview">
-            <img src="" alt="">
-            <h3>Graciele Martinele</h3>
-            <div class="stars"></div>
-            <p>Sou fã, sempre encontro o que preciso e agora já entregam na minha casa.</p>
+    <!-- Imagens Fictícias -->
+    <div id="reviews">
+        <div id="reviews-scroll">
+            <div class="cardReview">
+                <img src="images/reviews/cleiton.png" alt="">
+                <h3>Cleiton</h3>
+                <div class="stars"></div>
+                <p>Bom atendimento, peças em conta, grande variedade, vendedores muito bons rapidos e competentes.</p>
+            </div>
+            <div class="cardReview">
+                <img src="images/reviews/elias.jpg" alt="">
+                <h3>Elias</h3>
+                <div class="stars"></div>
+                <p>Serviço e atendimento bom</p>
+            </div>
+            <div class="cardReview">
+                <img src="images/reviews/maikon.png" alt="">
+                <h3>Maikon</h3>
+                <div class="stars"></div>
+                <p>Serviço bem feito, bom atendimento, preço justo. Como a mecânica é grande, o tempo de atendimento é
+                    rápido. Tudo perfeito.</p>
+            </div>
+            <div class="cardReview">
+                <img src="images/reviews/Graciele martinele.jpg" alt="">
+                <h3>Graciele Martinele</h3>
+                <div class="stars"></div>
+                <p>Sou fã, sempre encontro o que preciso e agora já entregam na minha casa.</p>
+            </div>
+            <div class="cardReview">
+                <img src="images/reviews/cleverson.jpg" alt="">
+                <h3>Cleverson</h3>
+                <div class="stars"></div>
+                <p>Atendimento sensacional... O vendedor foi super atencioso.... Muito profissional.... Resolvendo meus
+                    problemas... Parabéns também a moça do caixa e do cadastro....</p>
+            </div>
+            <div class="cardReview">
+                <img src="images/reviews/denis.jpg" alt="">
+                <h3>Denis</h3>
+                <div class="stars"></div>
+                <p>Bom Preço e atendimento excelente, ando 80 km para compra peças na loja.</p>
+            </div>
+            <div class="cardReview">
+                <img src="images/reviews/diego.png" alt="">
+                <h3>Diego Calisto</h3>
+                <div class="stars"></div>
+                <p>Fiz o motor do meu carro e ficou supimpa recomendo</p>
+            </div>
+            <div class="cardReview">
+                <img src="images/reviews/jair.png" alt="">
+                <h3>Jair Cordeiro</h3>
+                <div class="stars"></div>
+                <p>Ótima, super atenciosos e sem roubalheira, passam o verdadeiro orçamento sem invenção de serviços.
+                </p>
+            </div>
+            <div class="cardReview">
+                <img src="images/reviews/Jaime.jpg" alt="">
+                <h3>Jaime A. Belini</h3>
+                <div class="stars"></div>
+                <p>Ótimo atendimento em peças e serviços, com ótimo estoque de peças mecânica, acessórios e
+                    acabamentos...
+                </p>
+            </div>
+            <script src="scripts/stars.js"></script>
         </div>
     </div>
+    <!-- Nossos Fornecedores -->
+    <h2 class="title-tag">Nossos Fornecedores</h2>
+    <div id="slide-fornec">
+        <div class="slide-track-fornec" id="slideTrackFornec">
+            <!-- Logos dos fornecedores -->
+        </div>
+        <script src="scripts/slide-fornec.js"></script>
+    </div>
+
     <!-- Sobre nós (Historia da Empresa) -->
-    <div>
-        <h2>Empresa familiar, pioneira na cidade<br>É EXEMPLO DE DEDICAÇÃO</h2><span>Revista ACIT, Dezembro, 2013</span>
-        <p>Empresa familiar, Desde 1954 em Toledo-PR, temos o orgulho de fornecer peças e serviços com qualidade e
-            tradição a um preço justo para nossos clientes, seja ele quem for ou onde estiver, com três empresas em
-            diferentes segmentos na cidade.</p>
-        <h2>Missão</h2>
-        <p>Nossa missão é proporcionar crescimento econômico para região, através da confiança, agilidade e qualidade em
-            peças e serviços!</p>
-        <h2>Valores</h2>
-        <p>Se tornar liderança e referência na região Oeste do Paraná em reparação e revenda automotiva</p>
+    <div id="Sobre-nos">
+        <h2 class="title-tag">Empresa familiar, pioneira na cidade<br>É EXEMPLO DE DEDICAÇÃO</h2>
+        <p class="historia">Com mais de 60 anos de história, três lojas e mais de 80 funcionários, a Belenzier e Cia
+            Ltda é referência no ramo automotivo em Toledo. É administrada pela viúva Lourdes Belenzier e seus dois
+            filhos, Lieser e Lianara. A Belenzier Auto Center fica localizada no centro de Toledo, a filial no Jardim
+            Porto Alegre e a Truck Center, Rodovia BR-467. Todas comercializam peças e acessórios, bem como serviços
+            mecânicos.</p>
+
+        <p class="historia">A empresa Belenzier e Cia Ltda surgiu em Toledo no ano de 1952, a partir de uma sociedade
+            entre dois irmãos de amigos: Sadi Belenzier, Lírio Belenzier, Dorvalino Damo e Adílio Fellini. Os sócios
+            vieram da cidade de Serafina Corrêa, no Rio Grande do Sul.</p>
+
+        <p class="historia">A história da empresa se confunde com a história da cidade, pois cresceram juntas. Quando a
+            empresa foi fundada Toledo tinha sido recentemente emancipada, era uma pequena cidade com ainda não havia
+            quase nada. Os jovens amigos enfrentaram muitas dificuldades, pois estavam em uma cidade desconhecida e não
+            tinham muita experiência. Damo e Fellini, que também tinham vindo do Sul, conheceu o marido em 1957, logo
+            após a saída do Dorvalino e do Adílio da sociedade, e pode acompanhar de perto toda a trajetória da empresa
+            e o crescimento da cidade: "Podemos ver Toledo se desenvolver e se tornar uma cidade maravilhosa. Temos aqui
+            tudo o que necessitamos, não precisamos mais nos deslocar para outros municípios", diz.</p>
+        <div id="revistaAcit">Revista ACIT, Dezembro, 2013</div>
+
+        <div class="flexdiv">
+            <div>
+                <h2 class="title-tag">Missão</h2>
+                <p>Nossa missão é proporcionar crescimento econômico para região, através da confiança, agilidade e
+                    qualidade em peças e serviços!</p>
+            </div>
+            <div>
+                <h2 class="title-tag">Valores</h2>
+                <p>Se tornar liderança e referência na região Oeste do Paraná em reparação e revenda automotiva</p>
+            </div>
+        </div>
     </div>
     <!-- Rodapé -->
     <footer>
@@ -157,9 +211,11 @@
 
     <div id="div_contato">
         <span>Fale com o vendedor(a)!</span>
-        <button>
-            <img src="images/wpp.png" alt="">
-        </button>
+        <a href="https://wa.me/554591146044?text=Olá,%20estou%20interessado%20em%20um%20orçamento" target="_blank">
+            <button>
+                <img src="images/wpp.png" alt="">
+            </button>
+        </a>
     </div>
 </body>
 
