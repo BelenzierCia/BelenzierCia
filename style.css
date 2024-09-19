@@ -251,8 +251,8 @@ header img {
 }
 
 #slideTrackFornec img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     vertical-align: middle;
     object-fit: contain;
 }
