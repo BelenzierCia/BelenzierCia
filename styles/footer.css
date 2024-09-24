@@ -1,0 +1,59 @@
+/* Rodapé */
+footer {
+    background-color: var(--azul);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    border-bottom: 5px solid var(--red);
+}
+
+footer div {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+#Atendimento div {
+    flex-direction: row;
+    margin: 5px 0px;
+}
+
+#Atendimento a {
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+}
+
+footer .icon-footer {
+    width: 25px;
+    vertical-align: middle;
+}
+
+footer .direitos_e_redes-sociais {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer .direitos_e_redes-sociais div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0px;
+}

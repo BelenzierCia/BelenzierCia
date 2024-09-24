@@ -1,0 +1,35 @@
+/* Fornecedores Parceiros */
+
+/* Estilização do container do slide */
+#slide-fornec {
+    width: calc(100%-20px);
+    /* overflow: auto; */
+    overflow: hidden;
+    padding: 10px;
+}
+
+/* Estilização da track do slide */
+#slideTrackFornec {
+    width: 500%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+/* As divs de fornecedores em grupo serão exibidas horizontalmente */
+.div_fornec_group {
+    /* border-right: 2px solid var(--azul); */
+    user-select: none;
+    cursor: grab;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#slideTrackFornec img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    vertical-align: middle;
+    object-fit: contain;
+}

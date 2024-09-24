@@ -1,0 +1,37 @@
+#TeleVendasGroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* background-color: var(--darkgray); */
+}
+
+.televenda_loja {
+    text-align: center;
+    padding: 10px;
+}
+
+.title-televendas {
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+#TeleVendasGroup a {
+    text-decoration: none;
+    color: var(--azul);
+}
+
+#TeleVendasGroup a:hover {
+    text-decoration: underline;
+}
+
+.vendedor_contato {
+    width: 75%;
+}
+
+.televenda_loja:not(:last-child) {
+    border-right: 3px solid var(--azul);
+}
+
+.televedas_icon {
+    width: 20px;
+    vertical-align: middle;
+}

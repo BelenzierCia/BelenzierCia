@@ -1,0 +1,35 @@
+/* ---------------------------- NAV ---------------------------- */
+#NavSections {
+    display: flex;
+    /* display: none; */
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: right;
+    background-color: var(--azul);
+}
+
+#NavSections .nav-item {
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    height: 100%;
+}
+
+#NavSections .nav-item:not(:last-child) {
+    margin-right: 15px;
+}
+
+#NavSections .nav-item:hover {
+    border-bottom: 2px solid var(--red);
+    padding-bottom: 3px;
+}
+
+#NavSections .item-window {
+    position: absolute;
+    margin: 0px;
+}

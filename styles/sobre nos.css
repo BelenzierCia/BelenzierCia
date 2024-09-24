@@ -1,0 +1,26 @@
+/* Historia */
+
+#revistaAcit {
+    color: gray;
+    font-size: 15px;
+    max-width: 800px;
+    margin: auto;
+    text-align: right;
+}
+
+.historia {
+    padding: 20px 50px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.flexdiv {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+}
+
+.flexdiv div {
+    width: 40%;
+}

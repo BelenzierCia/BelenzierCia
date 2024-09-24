@@ -1,0 +1,23 @@
+#reviews {
+    width: 100%;
+    overflow: auto;
+}
+
+#reviews-scroll {
+    width: max-content;
+    overflow: hidden;
+}
+
+.cardReview {
+    vertical-align: top;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+}
+
+.cardReview img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+}

@@ -2,14 +2,25 @@
 <html lang="pt-br">
 
 <head>
-    <title>Belenzier e CIA</title>
+    <title>Belenzier Distribuidora Automotiva</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/nav bar.css">
+    <link rel="stylesheet" href="styles/slides.css">
+    <link rel="stylesheet" href="styles/selos.css">
+    <link rel="stylesheet" href="styles/reviews.css">
+    <link rel="stylesheet" href="styles/fornec.css">
+    <link rel="stylesheet" href="styles/televendas.css">
+    <link rel="stylesheet" href="styles/sobre nos.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link href="images/minilogo.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <header>
-        <img src="images/logo belenzier.png" alt="logo Belenzier">
+        <a href="https://belenziercia.github.io/"><img src="images/logo belenzier.png" alt="logo Belenzier"></a>
 
         <div class="search-container">
             <form action="/search" method="GET">
@@ -23,26 +34,10 @@
         </button>
     </header>
     <nav id="NavSections">
-        <div class="nav-item">Motor e Embreagem</div>
-        <ul class="item-window"></ul>
-        <div class="nav-item">Carburação e Injeção</div>
-        <ul class="item-window"></ul>
-        <div class="nav-item">Transmissão / Câmbio / Diferencial</div>
-        <ul class="item-window"></ul>
-        <div class="nav-item">Direção</div>
-        <ul class="item-window"></ul>
-        <div class="nav-item">Suspenção</div>
-        <ul class="item-window"></ul>
-        <div class="nav-item">Freios</div>
-        <ul class="item-window"></ul>
-        <div class="nav-item">Acessórios Automotivos</div>
-        <ul class="item-window"></ul>
-        <div class="nav-item">Carroceria e Escapamentos</div>
-        <ul class="item-window"></ul>
-        <div class="nav-item">Elétrico</div>
-        <ul class="item-window"></ul>
+        <a href="#TeleVendas" class="nav-item">Vendas</a>
+        <a href="#Sobre-nos" class="nav-item">Sobre a Empresa</a>
+        <a href="#OndeEncontrar" class="nav-item">Onde Encontrar</a>
     </nav>
-    <script src="scripts/nav-items-hover.js"></script>
     <div id="Slides">
         <div class="slide-container" id="slide-container">
             <div class="slide"><img src="images/Banners/01.png" alt="Imagem 1"></div>
@@ -61,13 +56,6 @@
             <div>Entregamos exclusivamente para o Oeste do Paraná. Frete calculado conforme a transportadora escolhida.
                 Confira as opções no checkout!</div>
         </div>
-        <!-- <div class="selo">
-            <img src="images/selos/Pagamento.png">
-            <h4>(_Pagamento_)</h4>
-            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid laudantium iure, assumenda, suscipit,
-                sunt omnis repellat earum officia magnam id hic beatae facilis voluptas laborum totam asperiores! Ullam,
-                quaerat voluptates.</div>
-        </div> -->
         <div class="selo">
             <img src="images/selos/PIX.png">
             <h4>Facilidade com Pix</h4>
@@ -88,7 +76,6 @@
         </div>
     </div>
     <!-- Seção Produtos -->
-    <!-- Depoimentos / Reviews -->
     <!-- Imagens Fictícias -->
     <div id="reviews">
         <div id="reviews-scroll">
@@ -96,13 +83,13 @@
                 <img src="images/reviews/cleiton.png" alt="">
                 <h3>Cleiton</h3>
                 <div class="stars"></div>
-                <p>Bom atendimento, peças em conta, grande variedade, vendedores muito bons rapidos e competentes.</p>
+                <p>Bom atendimento, peças em conta, grande variedade, vendedores muito bons rápidos e competentes.</p>
             </div>
             <div class="cardReview">
                 <img src="images/reviews/elias.jpg" alt="">
                 <h3>Elias</h3>
                 <div class="stars"></div>
-                <p>Serviço e atendimento bom</p>
+                <p>Serviço e bom atendimento!</p>
             </div>
             <div class="cardReview">
                 <img src="images/reviews/maikon.png" alt="">
@@ -134,7 +121,7 @@
                 <img src="images/reviews/diego.png" alt="">
                 <h3>Diego Calisto</h3>
                 <div class="stars"></div>
-                <p>Fiz o motor do meu carro e ficou supimpa recomendo</p>
+                <p>Fiz o motor do meu carro e ficou supimpa, recomendo!</p>
             </div>
             <div class="cardReview">
                 <img src="images/reviews/jair.png" alt="">
@@ -161,6 +148,90 @@
             <!-- Logos dos fornecedores -->
         </div>
         <script src="scripts/slide-fornec.js"></script>
+    </div>
+
+    <!-- Tele Vendas -->
+    <div id="TeleVendas">
+        <h2 class="title-tag">Vendas</h2>
+        <div id="TeleVendasGroup">
+            <div class="televenda_loja">
+                <h3 class="title-televendas">Auto Peças</h3>
+                <img class="vendedor_contato" src="images/vended/" alt="Vendedora Loraine">
+                <div>
+                    <img src="images/icons/maps.png" alt="icon maps" class="televedas_icon">Localização:<br>
+                    <a href="https://maps.app.goo.gl/raqmEnPjZbNM4p7A9" target="_blank">
+                        R. XV de Novembro, 1080 - Centro, Toledo - PR, 85900-200
+                    </a><br><br>
+                </div>
+                <div>
+                    <img src="images/icons/wpp.png" alt="icon whatsapp" class="televedas_icon">Whatsapp:<br>
+                    <a href="https://wa.me/554591146044?text=Olá,%20estou%20interessado%20em%20um%20orçamento"
+                        target="_blank">
+                        +55(45)91146-044
+                    </a><br><br>
+                </div>
+                <div>
+                    <img src="images/icons/email.png" alt="icon email" class="televedas_icon"> Email:<br>
+                    <a href="mailto:vendas_autocenter@belenzier.com.br" target="_blank">
+                        vendas_autocenter@belenzier.com.br
+                    </a>
+                </div>
+            </div>
+            <div class="televenda_loja">
+                <h3 class="title-televendas">Diesel</h3>
+                <img class="vendedor_contato" src="images/vended/joao.jpg" alt="Vendedor João">
+                <div>
+                    <img src="images/icons/maps.png" alt="icon maps" class="televedas_icon">Localização: <br>
+                    <a href="https://maps.app.goo.gl/hb9dKPdeMh7Juwtf9" target="_blank">
+                        Av. Parigot de Souza, 110 - Jardim Porto Alegre, Toledo - PR, 85906-070
+                    </a><br><br>
+                </div>
+                <div>
+                    <img src="images/icons/wpp.png" alt="icon whatsapp" class="televedas_icon">Whatsapp:<br>
+                    <a href="https://wa.me/5545991050561?text=Olá,%20estou%20interessado%20em%20um%20orçamento"
+                        target="_blank">
+                        +55(45)99105-0561
+                    </a><br><br>
+                </div>
+                <div>
+                    <img src="images/icons/email.png" alt="icon email" class="televedas_icon">Email:<br>
+                    <a href="mailto:atacado2_diesel@belenzier.com.br" target="_blank">
+                        atacado2_diesel@belenzier.com.br
+                    </a>
+                </div>
+            </div>
+            <div class="televenda_loja">
+                <h3 class="title-televendas">Truck</h3>
+                <img class="vendedor_contato" src="images/vended/marcos.jpg" alt="Vendedor Marcos">
+                <div>
+                    <img src="images/icons/maps.png" alt="icon maps" class="televedas_icon">Localização:<br>
+                    <a href="https://maps.app.goo.gl/qbGD6ji2iUcgn5CY6" target="_blank">
+                        BR-467, 4032 - Centro Industrial Metal Mecânico, Toledo - PR, 85907-060
+                    </a><br><br>
+                </div>
+                <div>
+                    <img src="images/icons/wpp.png" alt="icon whatsapp" class="televedas_icon">Whatsapp:<br>
+                    <a href="https://wa.me/5545991332946?text=Olá,%20estou%20interessado%20em%20um%20orçamento"
+                        target="_blank">
+                        +55(45)99133-2946
+                    </a><br><br>
+                </div>
+                <div>
+                    <img src="images/icons/email.png" alt="icon email" class="televedas_icon">
+                    Email:<br>
+                    <a href="mailto:#" target="_blank">
+                        ____________@belenzier.com.br
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Onde Encontrar -->
+    <div id="OndeEncontrar">
+        <h2 class="title-tag">Onde nos Encontrar?</h2>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1y43M3NRVoSB9FzFp9o-u3XGbbwhPM-o&ehbc=2E312F" width="600px"
+            height="480" frameborder="0" style="border:0; margin: auto; display: block;" allowfullscreen="">></iframe>
     </div>
 
     <!-- Sobre nós (Historia da Empresa) -->
@@ -199,23 +270,30 @@
     </div>
     <!-- Rodapé -->
     <footer>
-        <div>
+        <div id="Atendimento">
+            <h2>Atendimento</h2>
+            <div>
+                <a href="tel:4532522992">
+                    <img class="icon-footer" src="images/icons/phone.png" alt="">
+                    +55 (45) 3252-2992</a>
+            </div>
+            <div>De segunda a sexta às<br>8:00 - 12:00 / 13:30 - 18:00<br><br>e nos sábados<br>8:00 - 12:00</div>
+        </div>
+        <div class="direitos_e_redes-sociais">
             <p>&copy; 2024 Belenzier e Cia LTDA. Todos os direitos reservados.</p>
-            <ul>
+            <div>
+                <a href="https://www.facebook.com/Belenzier/"><img class="icon-footer" src="images/icons/facebook.png"
+                        alt="link facebook"></a>
+                <a href="http://instagram.com/belenziertoledo/"><img class="icon-footer"
+                        src="images/icons/instagram.png" alt="link instagram"></a>
+                <a href="#TeleVendas"><img class="icon-footer" src="images/icons/wpp.png" alt="link whatsapp"></a>
+            </div>
+            <!-- <ul>
                 <li><a href="#">Política de Privacidade</a></li>
                 <li><a href="#">Termos de Serviço</a></li>
-            </ul>
+            </ul> -->
         </div>
     </footer>
-
-    <div id="div_contato">
-        <span>Fale com o vendedor(a)!</span>
-        <a href="https://wa.me/554591146044?text=Olá,%20estou%20interessado%20em%20um%20orçamento" target="_blank">
-            <button>
-                <img src="images/wpp.png" alt="">
-            </button>
-        </a>
-    </div>
 </body>
 
 </html>

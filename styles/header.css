@@ -1,0 +1,71 @@
+/* ---------------------------- HEADER ---------------------------- */
+
+header {
+    height: 60px;
+    padding: 5px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-bottom: 6px solid var(--azul); */
+    /* background-color: var(--azul); */
+}
+
+header a {
+    height: 100%;
+}
+
+header a img {
+    max-height: 100%;
+}
+
+.search-container {
+    flex-grow: 1;
+    /* Faz a barra de pesquisa crescer para ocupar o espaço disponível */
+    display: flex;
+    justify-content: center;
+    /* Centraliza a barra de pesquisa */
+}
+
+.search-container form {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    padding: 0px 50px;
+}
+
+.search-container input[type="text"] {
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 100%;
+    /* Ocupa todo o espaço disponível */
+}
+
+.search-container button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: var(--azul);
+    color: white;
+    /* border: 2px solid white; */
+    /* border-left: none; */
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+#cart {
+    display: none;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    height: 100%;
+    padding: 15px;
+}
+
+#cart img {
+    height: 100%;
+    filter: invert(100%);
+}
