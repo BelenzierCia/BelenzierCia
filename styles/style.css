@@ -2,6 +2,7 @@
     --azul: #0056b3;
     --red: #ff0000;
     --darkgray: #252525;
+    --lightblue: #e6faff;
     /* --md-borda: 2px; */
 }
 
@@ -13,14 +14,16 @@
 
 /* Cor de fundo da barra de rolagem */
 ::-webkit-scrollbar-track {
-    background-color: #ddd;
+    background-color: var(--lightblue);
+    ;
 }
 
 /* Cor da parte "móvel" da barra de rolagem */
 ::-webkit-scrollbar-thumb {
     background-color: var(--azul);
     border-radius: 6px;
-    border: 2px solid #f0f0f0;
+    border: 2px solid var(--lightblue);
+    ;
 }
 
 html {

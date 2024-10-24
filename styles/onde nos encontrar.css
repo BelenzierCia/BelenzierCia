@@ -1,0 +1,25 @@
+#LocflexH {
+    display: flex;
+    justify-content: space-around;
+}
+
+#lojas_local {
+    padding: 15px;
+}
+
+#lojas_local p {
+    padding-left: 10px;
+}
+
+#lojas_local .loja_local {
+    border-bottom: 2px solid black;
+}
+
+#lojas_local .loja_local:last-of-type {
+    border-bottom: none;
+}
+
+#LocflexH iframe {
+    margin: 0px;
+    display: block;
+}

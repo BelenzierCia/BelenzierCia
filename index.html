@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="styles/reviews.css">
     <link rel="stylesheet" href="styles/fornec.css">
     <link rel="stylesheet" href="styles/televendas.css">
+    <link rel="stylesheet" href="styles/onde nos encontrar.css">
     <link rel="stylesheet" href="styles/sobre nos.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link href="images/minilogo.png" rel="shortcut icon">
+    <link href="images/logo belenzier.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -22,7 +23,7 @@
     <header>
         <a href="https://belenziercia.github.io/"><img src="images/logo belenzier.png" alt="logo Belenzier"></a>
 
-        <div class="search-container">
+        <!-- <div class="search-container">
             <form action="/search" method="GET">
                 <input type="text" placeholder="Digite sua pesquisa..." name="search">
                 <button type="submit">Pesquisar</button>
@@ -31,19 +32,19 @@
 
         <button id="cart">
             <img src="images/cart.png" alt="Carrinho de Compras">
-        </button>
+        </button> -->
+        <nav id="NavSections">
+            <a href="#TeleVendas" class="nav-item">Vendas</a>
+            <a href="#Sobre-nos" class="nav-item">Sobre a Empresa</a>
+            <a href="#OndeEncontrar" class="nav-item">Onde Encontrar</a>
+        </nav>
     </header>
-    <nav id="NavSections">
-        <a href="#TeleVendas" class="nav-item">Vendas</a>
-        <a href="#Sobre-nos" class="nav-item">Sobre a Empresa</a>
-        <a href="#OndeEncontrar" class="nav-item">Onde Encontrar</a>
-    </nav>
     <div id="Slides">
         <div class="slide-container" id="slide-container">
-            <div class="slide"><img src="images/Banners/01.png" alt="Imagem 1"></div>
-            <div class="slide"><img src="images/Banners/01.png" alt="Imagem 2"></div>
-            <div class="slide"><img src="images/Banners/01.png" alt="Imagem 3"></div>
-            <div class="slide"><img src="images/Banners/01.png" alt="Imagem 4"></div>
+            <!-- <div class="slide"><img src="images/Banners/01.png" alt="Imagem 2"></div> -->
+            <div class="slide"><img src="images/Banners/Região de Atendimento.png" alt="Imagem 1"></div>
+            <!-- <div class="slide"><img src="images/Banners/01.png" alt="Imagem 3"></div>
+            <div class="slide"><img src="images/Banners/01.png" alt="Imagem 4"></div> -->
         </div>
         <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
         <button class="next" onclick="moveSlide(1)">&#10095;</button>
@@ -156,7 +157,7 @@
         <div id="TeleVendasGroup">
             <div class="televenda_loja">
                 <h3 class="title-televendas">Auto Peças</h3>
-                <img class="vendedor_contato" src="images/vended/" alt="Vendedora Loraine">
+                <img class="vendedor_contato" src="images/vended/loraine.jpeg" alt="Vendedora Loraine">
                 <div>
                     <img src="images/icons/maps.png" alt="icon maps" class="televedas_icon">Localização:<br>
                     <a href="https://maps.app.goo.gl/raqmEnPjZbNM4p7A9" target="_blank">
@@ -227,11 +228,32 @@
         </div>
     </div>
 
+    <!-- Entregas (Cidades) -->
+    <div id="entregas">
+
+    </div>
+
     <!-- Onde Encontrar -->
     <div id="OndeEncontrar">
         <h2 class="title-tag">Onde nos Encontrar?</h2>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1y43M3NRVoSB9FzFp9o-u3XGbbwhPM-o&ehbc=2E312F" width="600px"
-            height="480" frameborder="0" style="border:0; margin: auto; display: block;" allowfullscreen="">></iframe>
+        <div id="LocflexH">
+            <div id="lojas_local">
+                <div class="loja_local">
+                    <h3>Belenzier Peças e Serviços</h3>
+                    <p>R. XV de Novembro, 1080 - Centro, Toledo - PR, 85900-200</p>
+                </div>
+                <div class="loja_local">
+                    <h3>Belenzier Diesel Peças e Serviços</h3>
+                    <p>Av. Parigot de Souza, 110 - Jardim Porto Alegre, Toledo - PR, 85906-070</p>
+                </div>
+                <div class="loja_local">
+                    <h3>Belenzier Truck Center</h3>
+                    <p>BR-467, 4032 - Centro Industrial Metal Mecânico, Toledo - PR, 85907-060</p>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1y43M3NRVoSB9FzFp9o-u3XGbbwhPM-o&ehbc=2E312F"
+                width="600px" height="480" frameborder="0" allowfullscreen="">></iframe>
+        </div>
     </div>
 
     <!-- Sobre nós (Historia da Empresa) -->
@@ -244,7 +266,7 @@
             mecânicos.</p>
 
         <p class="historia">A empresa Belenzier e Cia Ltda surgiu em Toledo no ano de 1952, a partir de uma sociedade
-            entre dois irmãos e dois amigos: Sadi Belenzier, Lírio Belenzier, Dorvalino Damo e Adílio Felini. Os sócios
+            entre dois irmãos de amigos: Sadi Belenzier, Lírio Belenzier, Dorvalino Damo e Adílio Fellini. Os sócios
             vieram da cidade de Serafina Corrêa, no Rio Grande do Sul.</p>
 
         <p class="historia">A história da empresa se confunde com a história da cidade, pois cresceram juntas. Quando a
@@ -282,9 +304,9 @@
         <div class="direitos_e_redes-sociais">
             <p>&copy; 2024 Belenzier e Cia LTDA. Todos os direitos reservados.</p>
             <div>
-                <a href="https://www.facebook.com/Belenzier/"><img class="icon-footer" src="images/icons/facebook.png"
-                        alt="link facebook"></a>
-                <a href="http://instagram.com/belenziertoledo/"><img class="icon-footer"
+                <a href="https://www.facebook.com/Belenzier/" target="_blank"><img class="icon-footer"
+                        src="images/icons/facebook.png" alt="link facebook"></a>
+                <a href="http://instagram.com/belenziertoledo/" target="_blank"><img class="icon-footer"
                         src="images/icons/instagram.png" alt="link instagram"></a>
                 <a href="#TeleVendas"><img class="icon-footer" src="images/icons/wpp.png" alt="link whatsapp"></a>
             </div>
